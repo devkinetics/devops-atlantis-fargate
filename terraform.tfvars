@@ -24,13 +24,13 @@ ecs_service_assign_public_ip = true
 
 # Atlantis
 # gitlab_base_url = ["https://github.com/devkinetics/"]
-atlantis_repo_allowlist = ["terraform-aws-atlantis", "serverless-jenkins-on-ecs","atlantis-test-repo"]
+atlantis_repo_allowlist = ["terraform-aws-atlantis", "serverless-jenkins-on-ecs", "atlantis-test-repo"]
 
 # Specify one of the following block.
 # For Github
-atlantis_github_user = "mikaelvg"
-atlantis_github_user_token_ssm_parameter_name = "/dev/atlantis-fargate/TOKEN/github-token" // Created in devios-secret-parameters repo.
-webhook_ssm_parameter_name = "/dev/atlantis-fargate/SCRET/webhook-secret"  // Override the default naming convention
+atlantis_github_user                          = "mikaelvg"
+atlantis_github_user_token_ssm_parameter_name = "/dev/atlantis-fargate/TOKEN/github-token"   // Created in devios-secret-parameters repo.
+webhook_ssm_parameter_name                    = "/dev/atlantis-fargate/SCRET/webhook-secret" // Override the default naming convention
 
 # Tags
 tags = {
